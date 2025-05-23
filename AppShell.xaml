@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GeneralMAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GeneralMAUI"
+    xmlns:custom="clr-namespace:GeneralMAUI.Views.Authentication"
+    xmlns:cust="clr-namespace:GeneralMAUI.Views.Grid"
+    Shell.FlyoutBehavior="Flyout"
+    Title="GeneralMAUI">
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+
+    
+
+    <ShellContent
+Title="Home"
+ContentTemplate="{DataTemplate custom:LoginTwo}"
+Route="MainPage" />
+
+
+    <ShellContent
+ Title="Home"
+ ContentTemplate="{DataTemplate cust:GridOne}"
+ Route="MainPage" />
+
+    <ShellContent
+ Title="Home"
+ ContentTemplate="{DataTemplate local:MainPage}"
+ Route="MainPage" />
+
+    <ShellContent
+     Title="Home1"
+     ContentTemplate="{DataTemplate custom:LoginPage}"
+     Route="Login" />
+
+   
+
+</Shell>

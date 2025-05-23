@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeneralMAUI.Views.Authentication.LoginTwo"
+             Title="LoginTwo">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+      
+        <Entry x:Name="UsernameEntry" Placeholder="Username" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+
+        <Button Text="Login" Clicked="OnLoginClicked" />
+
+        <Label x:Name="MessageLabel" TextColor="Red" />
+
+
+
+        <Line Fill="Aqua"></Line>
+        <Button Text="Add User" Clicked="OnAddUserClicked" />
+        <CollectionView x:Name="UsersListView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Name}" FontSize="20"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Line></Line>
+ 
+    </VerticalStackLayout>
+
+     
+        
+    </ScrollView>
+</ContentPage>
