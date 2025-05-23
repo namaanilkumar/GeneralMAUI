@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:GeneralMAUI"
     xmlns:custom="clr-namespace:GeneralMAUI.Views.Authentication"
     xmlns:cust="clr-namespace:GeneralMAUI.Views.Grid"
+     xmlns:em="clr-namespace:GeneralMAUI.Views.Employee"
     Shell.FlyoutBehavior="Flyout"
     Title="GeneralMAUI">
 
@@ -15,29 +16,34 @@
         Route="MainPage" />-->
 
 
-    
+    <ShellContent
+  Title="Employee"
+  ContentTemplate="{DataTemplate em:EmployeeDetailPage}"
+  Route="EmployeeDetailPage" />
 
     <ShellContent
-Title="Home"
+Title="Login"
 ContentTemplate="{DataTemplate custom:LoginTwo}"
-Route="MainPage" />
+Route="LoginTwo" />
 
 
     <ShellContent
- Title="Home"
+ Title="Grid"
  ContentTemplate="{DataTemplate cust:GridOne}"
- Route="MainPage" />
+ Route="GridOne" />
 
     <ShellContent
- Title="Home"
+ Title="Main"
  ContentTemplate="{DataTemplate local:MainPage}"
  Route="MainPage" />
 
     <ShellContent
-     Title="Home1"
+     Title="LoginMain"
      ContentTemplate="{DataTemplate custom:LoginPage}"
      Route="Login" />
 
-   
+
+
+
 
 </Shell>

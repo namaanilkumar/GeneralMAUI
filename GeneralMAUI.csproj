@@ -84,6 +84,9 @@
 	  <MauiXaml Update="Views\Authentication\LoginTwo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Employee\EmployeeDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Grid\GridOne.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
